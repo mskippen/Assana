@@ -222,6 +222,10 @@ section.immerse article h3 {
 section.immerse ul {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+section.immerse .text-block article h6, section.immerse .text-block article p {
+  font-size: 1.5rem;
 }
 /* END OF IMMERSE SECTION */
 
