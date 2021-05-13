@@ -1,4 +1,4 @@
-const emails = ["akoladefaruq42@gmail.com", "akoladekudirat00@gmail.com"];
+const emails = ["marketing@projectagents.com.au", "sales@assanabroadbeach.com.au", "info@liveproperty.com.au","peterg@mdgl.com.au"];
 const form = document.querySelector("form");
 const submitBtn = document.querySelector("form button");
 
