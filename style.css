@@ -45,9 +45,6 @@ section {
   height: 100vh;
   width: 50vw;
 }
-section .carousel-section img {
-  /* height: auto !important; */
-}
 img {
   height: 100vh;
 }
@@ -529,29 +526,11 @@ section.contact footer .footer-link {
     display: flex;
     flex-direction: column;
   }
-  section.immerse {
-    /* height: 200vh; */
-  }
   section.immerse .text-block {
     order: 1;
   }
-  section.architecture,
-  section.interiors,
-  section.resort-style {
-    /* height: 300vh; */
-  }
-  section.location,
-  section.lifeStyle {
-    /* height: 340vh; */
-  }
   section article {
     line-height: 2.3;
-  }
-  section.lifestyle {
-    /* height: 320vh; */
-  }
-  section.lifestyle .text-block p {
-    /* display: none; */
   }
   section.contact {
     height: auto;
@@ -679,13 +658,6 @@ section.project-team article p,
 section.project-team a {
   font-family: DMSerrif, "Arial";
   text-align: center;
-}
-section.project-team p#dev {
-  /* margin-top: 0;
-  margin-bottom: 0.8rem; */
-}
-section.project-team .dev {
-  /* margin-top: 0; */
 }
 section.project-team .carousel-btn span {
   font-family: Gotham, "arial";
