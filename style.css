@@ -75,7 +75,7 @@ section .carousel-section p.carousel-desc {
 }
 section.carousel3 p.carousel-desc,
 section.carousel5 .carousel-desc {
-  font-size: 13px;
+  font-size: 16px;
   text-align: center;
 }
 i.fa-arrow-circle-right,
@@ -104,6 +104,7 @@ header nav {
 header nav .hamburger-menu {
   margin-left: 21rem;
   font-size: 40px;
+  cursor: pointer;
 }
 header nav .brand {
   width: 60px;
@@ -301,7 +302,7 @@ section.lifestyle p {
   text-align: center;
   margin-bottom: 1rem;
   color: #4c4949;
-  font-size: 13px;
+  font-size: 16px;
   font-family: Gotham, "arial";
   width: 75%;
   margin: 2.5rem auto;
@@ -351,10 +352,9 @@ section.project-team .contentBox {
 }
 section.project-team img.project-img {
   width: 49%;
-  height: 68vh;
+  height: 74vh;
   margin: 0 auto;
-  margin-top: 17px;
-  border-radius: 2px;
+  margin-right: 0;
 }
 section.project-team article {
   width: 50%;
@@ -376,6 +376,10 @@ section.project-team article p {
 section.project-team article a {
   /* margin-left: 2rem; */
   text-decoration: underline;
+}
+section.project-team img#dev {
+  width: 400px;
+  margin-bottom: 1rem;
 }
 
 /* CONTACT SESSION */
@@ -703,6 +707,7 @@ select {
   display: block;
   width: 100%;
   padding: 6px;
+  height: 40px;
 }
 input::placeholder {
   color: #4c4949;
@@ -735,4 +740,30 @@ input::placeholder {
   nav .nav-items > a {
     margin: 0;
   }
+}
+
+/* DROPDOWN NAV */
+.dropdownNav {
+  /* display: none; */
+  background-color: rgb(207, 238, 250);
+  transform: translateY(-100%);
+  height: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropMenu {
+  height: 100vh;
+  transform: translateY(0%);
+}
+.dropdownNav a {
+  display: block;
+  font-family: DMSerrif, "Arial";
+  color: #4c4949;
+  font-size: 28px;
+}
+.v-hidden {
+  visibility: hidden;
+  display: none;
 }

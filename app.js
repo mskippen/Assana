@@ -1,8 +1,3 @@
-// AOS.init({
-//   mirror: true,
-//   offset: 180,
-// });
-
 function init() {
   new fullpage("#fullpage", {
     autoScrolling: true,
@@ -19,16 +14,16 @@ function init() {
       "home",
       "immerse",
       "architecture",
-      "carousel1",
+      // "lobby",
       "interiors",
-      "carousel2",
+      // "features",
       "location",
-      "carousel3",
-      "resort-style",
-      "carousel4",
+      "goldCoast",
+      "resort",
+      "facilities",
       "lifestyle",
-      "carousel5",
-      "project-team",
+      "local",
+      "team",
       "contact",
     ],
     navigationPosition: "right",
@@ -108,23 +103,31 @@ function init() {
   });
 }
 
-// function doSomething() {
-//   // Do something with the scroll position
-//   console.log("scrolled man");
-// }
-
-// window.addEventListener("scroll", function (e) {
-//   doSomething();
-// });
-
 init();
 
-// function myFunction() {
-//   const w = window.innerWidth;
-//   if (w > 400) {
-//     init();
-//   } else {
-//     return;
-//   }
-//   console.log(w);
-// }
+const burgerMenu = document.querySelector("header nav .menu-icon span");
+const dropdownWrapper = document.querySelector(".dropdownNav");
+const dropdownLinks = document.querySelectorAll(".dropdownNav .wrapper a");
+const mainPage = document.querySelector("main");
+const sections = document.querySelectorAll("section");
+
+
+document.querySelector("#fp-nav").addEventListener("click", () => {
+  showPage()
+})
+
+burgerMenu.addEventListener("click", () => {
+  dropdownWrapper.classList.toggle("dropMenu");
+  sections.forEach((i) => i.classList.toggle("v-hidden"));
+  mainPage.classList.toggle("v-hidden");
+});
+
+dropdownLinks.forEach((item) => {
+  item.addEventListener("click", () => showPage());
+})
+
+const showPage = () => {
+  dropdownWrapper.classList.remove("dropMenu");
+  sections.forEach((i) => i.classList.remove("v-hidden"));
+  mainPage.classList.remove("v-hidden");
+}
