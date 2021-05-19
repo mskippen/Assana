@@ -143,13 +143,7 @@ nav .nav-btn {
   section.project-team .contentBox {
     flex-direction: column;
   }
-  section.project-team img.project-img {
-    width: 68%;
-    height: 40vh;
-    margin: 0 auto;
-    margin-top: 17px;
-    border-radius: 2px;
-  }
+  
   section.project-team article img {
     margin-top: 1.5rem;
     max-height: 75px;
@@ -173,6 +167,24 @@ nav .nav-btn {
   section.contact input {
     padding: 1rem;
   }
+  section.project-team .wrapper {
+    width: 80%;
+    height: 62vh;
+  }
+  section.project-team article {
+    width: 100%;
+  }
+  section.project-team img.project-img {
+    width: 100%;
+    height: 68vh;
+    margin: 0 auto;
+    /* margin-top: 17px; */
+    display: none;
+    border-radius: 2px;
+  }
+  section.project-team .img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-height: 1024px) {
@@ -191,10 +203,10 @@ nav .nav-btn {
     display: none;
   }
   .text-block {
-    height: 50vh;
+    height: 40vh;
   }
   .img-block {
-    height: 50vh;
+    height: 60vh;
   }
   section.architecture article h3,
   section.interiors article h3,
@@ -207,7 +219,7 @@ nav .nav-btn {
   }
   section.immerse article {
     width: 70%;
-    line-height: 1.9;
+    /* line-height: 1.9; */
   }
   section.immerse article h3 {
     margin-top: initial;
@@ -231,6 +243,13 @@ nav .nav-btn {
   section.interiors .text-block {
     height: 32vh;
   }
+  section.interiors .text-block h3 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  section.location article {
+    margin-top: 4rem;
+  }
   section.architecture p,
   section.interiors p,
   section.location p,
@@ -240,6 +259,15 @@ nav .nav-btn {
     margin: 1.3rem auto;
     line-height: 1.6;
     margin-bottom: 0;
+    font-size: 14px;
+  }
+  section.immerse ul,
+  section.immerse h4 {
+    font-size: 1.2rem !important;
+    line-height: 1.4;
+  }
+  section.architecture article {
+    margin-top: 3rem;
   }
   nav .nav-items a:nth-child(1) {
     display: none;
@@ -267,6 +295,10 @@ nav .nav-btn {
     width: 169px;
     height: 130px;
   }
+  section.project-team .wrapper {
+    height: 82vh;
+    width: 73%;
+}
   section.project-team h3 {
     margin-top: 0rem;
     color: #fff;
@@ -282,26 +314,33 @@ nav .nav-btn {
     width: 100%;
     order: 1;
   }
+  section.project-team .carousel-btn span {
+    font-size: 24px;
+    /* color: #fff; */
+}
   section.project-team article p,
   section.project-team a {
-    font-size: 14px;
+    font-size: 17px;
   }
   section.project-team .carousel-btn {
     font-family: Gotham, "arial";
-    bottom: -24px;
+    bottom: 2px;
   }
   section.project-team img.project-img {
     display: block;
+    width: 100%;
   }
   section.project-team .contentBox {
     flex-direction: column;
   }
   section.project-team img.project-img {
-    width: 68%;
+    width: 100%;
     height: 68vh;
     margin: 0 auto;
-    margin-top: 17px;
     border-radius: 2px;
+  }
+  section.project-team .img {
+    width: 100%;
   }
   section.project-team article img {
     margin-top: 1.5rem;
@@ -309,22 +348,41 @@ nav .nav-btn {
     min-height: 75px;
     min-width: 130px;
     max-height: 130px;
-    width: 130px !important;
+    /* width: 130px !important; */
     height: 100%;
     margin: 1rem auto;
     margin-bottom: 1rem;
     display: block;
   }
+  .carousel-inner:not(section.project-team .carousel-inner) {
+    top: 20%;
+  }
+  .carousel-section .carousel-item p.carousel-desc {
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto;
+  }
   section.contact .contact-wrapper header {
     width: 100%;
   }
-
+  section.contact .form-group {
+    margin-top: 0;
+}
+form {
+  padding: 1rem;
+}
   select {
     width: 100%;
     padding: 0.5rem;
   }
   section.contact input {
     padding: 0.5rem;
+  }
+  section.resort-style h3 {
+    margin-top: 0rem;
+  }
+  section.lifestyle article {
+    margin-top: 3rem;
   }
 }
 
@@ -648,12 +706,12 @@ nav .nav-btn {
   section.project-team article p {
     font-size: 0.9rem !important;
   }
-  form input:first-child{
+  form input:first-child {
     margin-top: 5px;
   }
 }
 
-@media screen and (max-width: 411px) and (min-height: 731px){
+@media screen and (max-width: 411px) and (min-height: 731px) {
   section.project-team article p {
     width: 80%;
     font-size: 0.9rem !important;
@@ -843,7 +901,7 @@ nav .nav-btn {
     padding: 12px;
     padding-bottom: 1rem;
   }
-  form input:first-child{
+  form input:first-child {
     margin-top: 6px;
   }
   section .carousel-section p.carousel-desc {
@@ -933,7 +991,8 @@ nav .nav-btn {
 @media screen and (max-width: 360px) and (min-height: 640px),
   (max-width: 411px) and (min-height: 731px),
   (max-width: 320px),
-  (max-width: 375px) and (min-height: 667px), (max-width: 414px) and (min-height: 736px) {
+  (max-width: 375px) and (min-height: 667px),
+  (max-width: 414px) and (min-height: 736px) {
   /* MOTO G4 */
   section .carousel-section p.carousel-desc {
     width: 85%;
@@ -1284,10 +1343,22 @@ nav .nav-btn {
     font-size: 1.3rem;
   }
   section.project-team article p {
-    font-size: 13px !important;
+    font-size: 15px !important;
   }
   h4 {
     font-size: 1.1rem;
+  }
+  form {
+    padding: 9px;
+  }
+  form input:first-child {
+    margin-top: 10px;
+  }
+  section.location article {
+    margin-top: 0.5rem;
+  }
+  section.lifestyle article {
+    margin-top: 3rem;
   }
 }
 
