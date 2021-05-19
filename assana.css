@@ -467,17 +467,25 @@ form {
     margin: 1.2rem auto;
     letter-spacing: 1px;
     line-height: 1.4;
-    font-size: 12px;
+    font-size: 13px;
   }
-  section.architecture img {
-    /* height: 51vh; */
+  section.location article {
+    margin-top: 4rem;
+  }
+  .carousel-inner:not(section.project-team .carousel-inner) {
+    top: 18%;
+  }
+  .carousel-section .carousel-item p.carousel-desc {
+    font-size: 13px ;
+    width: 85%;
+    margin: 0 auto;
   }
   section.lifestyle .text-block p {
     display: block;
   }
   section.project-team .wrapper {
     width: 78%;
-    height: 55vh;
+    height: 62vh;
   }
   section.contact .contact-wrapper {
     width: 88%;
@@ -489,15 +497,18 @@ form {
     width: 100%;
     padding: 0.4rem;
   }
-  section.contact input {
+  section.contact input, section.contact select {
     padding: 9.3px;
   }
   section.contact footer a {
     font-size: 1rem;
   }
-  .fp-tableCell {
-    /* display: inline-block !important; */
-  }
+  section.project-team .img {
+    width: 0;
+}
+section.contact .form-group {
+  margin-top: 0;
+}
 }
 @media screen and (max-width: 540px) and (min-height: 720px) {
   section.immerse article {
@@ -511,8 +522,27 @@ form {
   header nav .brand {
     margin-left: 0;
   }
+  nav .nav-items a:nth-child(1) {
+    display: none;
+  }
+  nav .menu-icon i {
+    font-size: 29px;
+  }
+  nav a.nav-btn {
+    margin-right: 0;
+}
+  header nav .hamburger-menu {
+    margin-left: 7rem;
+    font-size: 40px;
+  }
+  section.home {
+    height: auto;
+    background: url("./images/375x667.png");
+    background-position: center;
+    background-size: cover;
+  }
   section p {
-    font-size: 17px;
+    font-size: 13px;
   }
   section.immerse article h3 {
     margin-top: 1.5rem;
@@ -525,12 +555,15 @@ form {
   section.lifestyle h3 {
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 0.8rem;
-    font-size: 2.8rem;
+    margin-bottom: 1.4rem;
+    font-size: 1.75rem;
   }
   section.architecture .text-block {
     display: none;
   }
+  section.lifestyle .text-block {
+    height: 40vh;
+}
   section.architecture .img-block {
     height: 100vh;
   }
@@ -547,9 +580,9 @@ form {
     line-height: 1.4;
     font-size: 15px;
   }
-  section.location article p,
-  section.resort-style article p,
-  section.lifestyle article p {
+  section.location article h4,
+  section.resort-style article h4,
+  section.lifestyle article h4 {
     display: none !important;
   }
   section.lifestyle article {
@@ -559,7 +592,7 @@ form {
   section.resort-style .text-block,
   section.lifetsyle .text-block {
     height: 40vh;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
   section.resort-style .text-block {
     margin-top: 0;
@@ -593,8 +626,8 @@ form {
   }
   section.contact .contact-wrapper header h3 {
     margin-top: 19px;
-    margin-bottom: -11px;
-    font-size: 2.3rem;
+    margin-bottom: 0px;
+    font-size: 1.7rem;
   }
 }
 
