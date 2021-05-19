@@ -1444,10 +1444,18 @@ section.contact .form-group {
   h6 {
     font-size: 15px;
   }
-  section.architecture article,
-  section.lifestyle article {
-    margin-top: 20px;
+  section.architecture article{
+    margin-top: 7rem;
   }
+  section.location img, section.lifestyle img {
+    height: 100%;
+}
+section.project-team article p, section.project-team a {
+  font-size: 12px !important;
+}
+  section.lifestyle h3 {
+    margin-top: 2.5rem;
+}
   section.immerse .text-block {
     height: 100vh;
   }
