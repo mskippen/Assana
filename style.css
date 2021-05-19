@@ -765,3 +765,19 @@ input::placeholder {
   margin: 0 auto;
   max-height: 100vh;
 }
+
+section.project-team .carousel-item article .slide-img {
+  width: 50%;
+  margin: 0 auto;
+}
+section.project-team .carousel-item article .slide-img img {
+  width: 100%;
+  margin-bottom: 0;
+}
+@media (max-height: 657px) {
+  section.project-team article p {
+    width: 95%;
+    line-height: 2;
+    font-size: 1rem;
+  }
+}
