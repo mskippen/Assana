@@ -72,7 +72,7 @@ section .carousel-section p.carousel-desc {
 }
 section.carousel3 p.carousel-desc,
 section.carousel5 .carousel-desc {
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
 }
 i.fa-arrow-circle-right,
