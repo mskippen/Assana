@@ -13,7 +13,7 @@ nav .nav-btn {
   }
 } */
 
-@media screen and (min-width: 1024px) and (min-height: 1366pxq) {
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
   section.home {
     height: auto;
     background: url("./images/375x667.png");
@@ -38,14 +38,19 @@ nav .nav-btn {
     font-size: 1.6rem;
   }
   h4 {
-    font-size: 2rem;
-  }
-  section p {
     font-size: 1.6rem;
   }
-  section.immerse ul {
-    font-size: 1.4rem;
+  section p {
+    font-size: 1.1rem;
   }
+  section.immerse ul, section.immerse .text-block h4 {
+    font-size: 1.5rem !important;
+  }
+  section.immerse article h3 {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
   nav .nav-items a:nth-child(1) {
     display: none;
   }
@@ -70,30 +75,34 @@ nav .nav-btn {
   section.lifestyle p {
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    width: 85%;
   }
   section.architecture article h3,
-  section.interiors article h3,
   section.location h3,
   section.resort-style h3,
   section.lifestyle h3 {
     margin-top: 3rem;
   }
-  section.architecture .text-block,
-  section.location .text-block,
-  section.lifestyle .text-block {
-    height: 45vh;
+  .text-block {
+    height: 40vh;
   }
-  section.interiors .text-block {
-    height: 37vh;
+  section.architecture article {
+    margin-top: 2rem;
   }
-  section.architecture .img-block,
-  section.location .img-block,
-  section.lifetsyle .img-block {
-    height: 55vh;
+  section.interiors article h3 {
+    margin-top: 0;
   }
-  section.interiors .img-block {
-    height: 63vh;
+  .img-block {
+    height: 60vh;
   }
+  .carousel-inner .carousel-item p.carousel-desc {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+  }
+  .carousel-inner:not(section.project-team .carousel-inner) {
+    top: 20%;
+}
   section.location p {
     margin-bottom: 0;
   }
@@ -135,7 +144,7 @@ nav .nav-btn {
   }
   section.project-team .carousel-btn {
     font-family: Gotham, "arial";
-    bottom: -35px;
+    bottom: -29px;
   }
   section.project-team img.project-img {
     display: block;
@@ -150,7 +159,6 @@ nav .nav-btn {
     min-height: 75px;
     min-width: 130px;
     max-height: 130px;
-    width: 130px !important;
     height: 100%;
     margin: 1rem auto;
     margin-bottom: 1rem;
@@ -164,26 +172,45 @@ nav .nav-btn {
     width: 100%;
     padding: 1rem;
   }
-  section.contact input {
+  section.contact input, section.contact select {
     padding: 1rem;
+    height: auto;
   }
+  form {
+    padding: 1.6rem;
+    width: 100%;
+  }
+  section.contact .contact-wrapper {
+    width: 80%;
+}
   section.project-team .wrapper {
     width: 80%;
-    height: 62vh;
+    height: 82vh;
   }
+  header nav .nav-items {
+    margin-right: 1rem;
+}
   section.project-team article {
     width: 100%;
   }
+   button.nav-btn {
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+}
   section.project-team img.project-img {
     width: 100%;
-    height: 68vh;
+    height: 48vh;
     margin: 0 auto;
     /* margin-top: 17px; */
-    display: none;
+    display: block;
     border-radius: 2px;
   }
   section.project-team .img {
     width: 100%;
+  }
+  section.project-team .carousel-item article .slide-img {
+    width: 275px;
+    margin: 0 auto;
   }
 }
 
