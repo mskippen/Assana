@@ -37,7 +37,8 @@ function sendIt(e) {
       .then((data) => {
         console.log(data);
         if (data.success == "true") {
-          window.location.href = "./confirm.html";
+          form.classList.add("d-none")
+          messageBox.classList.remove("d-none")
         }
       })
       .catch((error) => console.log(error));
@@ -45,8 +46,5 @@ function sendIt(e) {
 }
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault()
   sendIt(e);
-  form.classList.add("d-none")
-  messageBox.classList.remove("d-none")
 });
