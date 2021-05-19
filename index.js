@@ -1,6 +1,7 @@
 const emails = ["marketing@projectagents.com.au", "sales@assanabroadbeach.com.au", "info@liveproperty.com.au","peterg@mdgl.com.au"];
 const form = document.querySelector("form");
 const submitBtn = document.querySelector("form button");
+const messageBox = document.querySelector("section.contact .messageBox")
 
 function sendIt(e) {
   e.preventDefault();
@@ -44,5 +45,8 @@ function sendIt(e) {
 }
 
 form.addEventListener("submit", (e) => {
+  e.preventDefault()
   sendIt(e);
+  form.classList.add("d-none")
+  messageBox.classList.remove("d-none")
 });

@@ -181,8 +181,8 @@ section.immerse {
 }
 section.immerse img {
   width: 100%;
-  /* height: 100vh; */
-  height: auto;
+  height: 100vh;
+  /* height: auto; */
 }
 section.immerse .text-block {
   /* background: url(./images/iStock-509561203.jpg) no-repeat; */
@@ -222,7 +222,9 @@ section.immerse ul {
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
-section.immerse .text-block article h6, section.immerse .text-block article p {
+section.immerse .text-block article h6,
+section.immerse .text-block article p,
+section.immerse .text-block article h4 {
   font-size: 1.5rem;
 }
 /* END OF IMMERSE SECTION */
@@ -232,18 +234,9 @@ section.architecture,
 section.interiors,
 section.resort-style,
 section.lifestyle {
-  /* height: 200vh; */
   height: auto;
-
-  /* border: 5px solid black; */
-  /* position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0; */
 }
 section.location {
-  /* height: 220vh; */
   height: auto;
 }
 section.location .carousel-section img,
@@ -348,7 +341,7 @@ section.project-team .contentBox {
   justify-content: space-evenly;
 }
 section.project-team img.project-img {
-  width: 49%;
+  width: 100%;
   height: 74vh;
   margin: 0 auto;
   margin-right: 0;
@@ -358,8 +351,12 @@ section.project-team article {
   font-family: "Gotham arial";
   position: relative;
 }
+section.project-team .img {
+  width: 50%;
+}
 section.project-team article img {
   width: 350px;
+  /* width: 50%; */
   height: initial;
   margin: 2rem auto;
   display: block;
@@ -409,11 +406,13 @@ section.contact .contact-wrapper header h3 {
   color: #4c4949;
 }
 section.contact .contact-wrapper header {
-  width: 40%;
+  width: 100%;
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
+  /* padding-top: 5rem;
+  padding-bottom: 2rem; */
   margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 0.4rem;
 }
 section.contact input {
   display: block;
@@ -479,7 +478,17 @@ section.contact footer .footer-link {
   background: #fff;
   padding: 0.6rem;
 }
+section.contact .messageBox h3  {
+  font-family: DMSerrif, "Arial";
+  margin-top: 20px;
+  color: #4c4949;
+  text-align: center;
+}
 
+section.contact .messageBox article {
+  width: 80%;
+  margin: auto;
+}
 @media screen and (max-width: 768px) {
   /* NAV MENU */
   nav a:nth-child(1) {
@@ -565,6 +574,8 @@ section.contact footer .footer-link {
 /* new */
 section .carousel-section img {
   height: 60vh;
+  /* min-height: 53vh;
+  height: auto; */
   width: 100%;
   margin-top: 3rem;
 }
@@ -649,6 +660,7 @@ section.carousel1 .carousel-inner {
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
+  max-height: 100vh;
 }
 
 section.project-team .carousel-inner {
@@ -669,9 +681,14 @@ section.project-team .carousel-btn {
   text-transform: uppercase;
   font-size: 17px;
   position: absolute;
-  bottom: -18px;
+  bottom: 3%;
   left: 0;
   right: 0;
+}
+section.carousel5 .carousel-section .carousel-item img {
+  /* max-height: 346.8px;
+  min-height: 346.8px;
+  height: 346.8px; */
 }
 
 select {
@@ -738,4 +755,13 @@ input::placeholder {
 .v-hidden {
   visibility: hidden;
   display: none;
+}
+
+.carousel-inner:not(section.project-team .carousel-inner) {
+  position: absolute;
+  top: 9%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-height: 100vh;
 }

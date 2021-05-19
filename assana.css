@@ -288,7 +288,7 @@ nav .nav-btn {
   }
   section.project-team .carousel-btn {
     font-family: Gotham, "arial";
-    bottom: -35px;
+    bottom: -24px;
   }
   section.project-team img.project-img {
     display: block;
@@ -490,7 +490,8 @@ nav .nav-btn {
     text-align: center;
   }
   section.project-team article img {
-    width: 73px;
+    /* width: 73px; */
+    width: 181px;
   }
   section.project-team img.project-img {
     display: none;
@@ -619,7 +620,7 @@ nav .nav-btn {
     width: 100%;
   }
   section.contact .contact-wrapper header h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   select {
     width: 100%;
@@ -633,6 +634,16 @@ nav .nav-btn {
   }
   .fp-tableCell {
     /* display: inline-block !important; */
+  }
+  /* NEW */
+  section.project-team article img {
+    width: 208px;
+    margin: 0.8rem auto;
+  }
+  section.project-team article p {
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -684,15 +695,16 @@ nav .nav-btn {
 
   section .text-block,
   section.location .text-block {
-    height: 55vh;
+    height: 55vh !important;
     display: flex !important;
+    margin-top: 0;
   }
   section .img-block,
   section.location .img-block {
-    height: 45vh;
+    height: 45vh !important;
   }
   section.architecture .img-block {
-    height: 45vh;
+    height: 45vh !important;
   }
   section.interiors .img-block {
     display: flex;
@@ -732,6 +744,18 @@ nav .nav-btn {
   }
   section.contact input {
     padding: 0.4rem;
+  }
+  /* new */
+  section.project-team article img {
+    width: 181px;
+    margin: -0.1rem auto;
+  }
+  section.project-team article p {
+    margin-bottom: 2rem;
+  }
+  section.contact .contact-wrapper header h3 {
+    margin-bottom: 16px;
+    font-size: 1.3rem;
   }
 }
 
@@ -822,6 +846,7 @@ nav .nav-btn {
     padding-bottom: 1rem;
     padding-top: 3.1rem;
     font-size: 1.7rem;
+    width: 100%;
   }
   select {
     width: 100%;
@@ -842,7 +867,7 @@ nav .nav-btn {
   }
   section.location .img-block,
   section.resort-style .img-block {
-    height: 45vh;
+    height: 40vh;
   }
   section.project-team .carousel-section img.project-img {
     display: none;
@@ -851,6 +876,15 @@ nav .nav-btn {
     width: 100%;
     font-family: "Gotham arial";
     position: relative;
+  }
+  /* NEW */
+  section.project-team article img {
+    width: 208px;
+    margin: 0.8rem auto;
+  }
+  section.project-team article p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -968,6 +1002,14 @@ nav .nav-btn {
   section.contact h3 {
     font-size: 1.3rem;
   }
+  /* NEW */
+  section.project-team article img {
+    width: 208px;
+    margin: 0.8rem auto;
+  }
+  .carousel-inner:not(section.project-team .carousel-inner) {
+    top: 5%;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -979,7 +1021,7 @@ nav .nav-btn {
   }
   section article {
     line-height: 1.7;
-    width: 90% !important;
+    width: 100% !important;
   }
   section.interiors .fp-tableCell {
     display: inline;
@@ -1016,7 +1058,7 @@ nav .nav-btn {
     display: block;
   }
   /* IMMERSE SECTION */
-  section.immerse img {
+  section.immerse .img-block {
     display: none;
   }
   section.immerse .text-block {
@@ -1059,12 +1101,21 @@ nav .nav-btn {
   }
 
   section.location .text-block,
-  section.resort-style .text-block {
-    height: 67vh;
+  section.resort-style .text-block,
+  section.lifestyle .text-block {
+    height: 60vh;
   }
   section.location .img-block,
-  section.resort-style .img-block {
+  section.resort-style .img-block,
+  section.lifestyle .img-block {
     height: 40vh;
+  }
+  section.architecture .img-block {
+    height: 35vh;
+  }
+  section.architecture .text-block {
+    height: 65vh;
+    text-align: center;
   }
   section.lifestyle article {
     margin-top: 29px;
@@ -1083,13 +1134,22 @@ nav .nav-btn {
     padding-top: 3rem;
   }
   section.contact h3 {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
   }
   section.contact input {
     padding: 0.4rem;
   }
   select {
     display: none;
+  }
+  section.project-team img.project-img {
+    display: none;
+  }
+  .text-block {
+    height: 50vh;
+  }
+  .img-block {
+    height: 50vh;
   }
 }
 
@@ -1116,6 +1176,7 @@ nav .nav-btn {
   }
   section.resort-style article h3 {
     margin-top: 1rem;
+    font-size: 1.3rem;
   }
   section.project-team article p {
     font-size: 13px !important;
@@ -1152,7 +1213,7 @@ nav .nav-btn {
     margin-top: 20px;
   }
   section.immerse .text-block {
-    height: 62vh;
+    height: 100vh;
   }
   .carousel-inner {
     width: 100%;
